@@ -14,4 +14,12 @@ $(document).ready(function() {
 	$('.menu-button').click(function() {
 		$('ul.menu').toggleClass('visible');
 	});
+
+	$('.tile-grid .grid-item').hover(function() {
+		$(this).addClass('hover');
+		console.log('hover');
+	},
+	function() {
+		$(this).removeClass('hover');
+	})
 });
