@@ -962,3 +962,80 @@ table {
 		background-size: 18px 30px;		
 	}
 }
+
+.posts-navigation {
+	margin-top: 20px;
+	padding-top: 30px;
+
+	border-top: 1px solid #fff;
+
+	.nav-previous, .nav-next {
+		display: inline-block;
+
+		position: relative;
+
+		width: 50%;
+
+		box-sizing: border-box;
+
+		a {
+			display: block;
+
+			width: 100%;
+
+			padding: 20px;
+
+			background: #fff;
+
+			text-decoration: none;
+			color: #666;
+			font-weight: 600;
+
+			box-sizing: border-box;
+		}
+	}
+
+	.nav-previous {
+		padding-right: 10px;
+
+		a {
+			padding-left: 50px;
+		}
+
+		&:before {
+			content: "<";
+
+			position: absolute;
+
+			top: 15px;
+			left: 20px;
+
+			color: #009fe3;
+			font-weight: 700;
+			font-size: 2.2rem;
+		}
+	}
+
+	.nav-next {
+		padding-left: 10px;
+
+		a {
+			padding-right: 50px;
+
+			text-align: right;
+		}
+
+		&:before {
+			content: ">";
+
+			position: absolute;
+
+			top: 15px;
+			right: 20px;
+
+			color: #009fe3;
+			font-weight: 700;
+			font-size: 2.2rem;
+		}
+	}
+}

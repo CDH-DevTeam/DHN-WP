@@ -40,13 +40,12 @@ get_header(); ?>
 				</h1>
 			</header>
 
-
-		<div class="row">
-			<div class="twelve columns tile-grid">
-
 			<?php
 			if ( have_posts() ) : ?>
 
+
+				<div class="row">
+					<div class="twelve columns tile-grid">
 
 				<?php
 				/* Start the Loop */
@@ -61,16 +60,30 @@ get_header(); ?>
 
 				endwhile;
 
-				the_posts_navigation();
+				?>
 
-			else :
-
-				get_template_part( 'template-parts/content', 'none' );
-
-			endif; ?>
-
+				</div>
 			</div>
-		</div>
+			
+			<div class="row">
+				<div class="twelve columns">
+
+					<?php
+
+					the_posts_navigation();
+
+					?>
+				</div>
+			</div>
+
+		<?php
+
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif; ?>
+
 
 		<?php if ( is_active_sidebar( 'after-content' ) ) { ?>
 			<div class="row">
