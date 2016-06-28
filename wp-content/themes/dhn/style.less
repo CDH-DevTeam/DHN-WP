@@ -81,8 +81,6 @@ ul.ul-buttons {
 
 	border-bottom: 1px solid #fff;
 
-	text-align: right;
-
 	@media(max-width: 800px) {
 		text-align: left;
 	}
@@ -519,6 +517,23 @@ a.more-link {
 	border-radius: 1px;
 }
 
+.entry-tags {
+	a {
+		display: inline-block;
+
+		padding: 2px 5px;
+		margin: 0 5px 5px 0;
+
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.34rem;
+
+		border-radius: 3px;
+
+		background: #009FE3;
+	}
+}
+
 .post, .page, .single {
 	h2.entry-title {
 		font-size: 3.2rem
@@ -550,20 +565,6 @@ a.more-link {
 			padding-left: 20px;
 
 			border-left: 1px solid #C3C3C3;
-
-			a {
-				display: inline-block;
-
-				padding: 2px 5px;
-
-				text-decoration: none;
-				color: #fff;
-				font-size: 1.34rem;
-
-				border-radius: 3px;
-
-				background: #009FE3;
-			}
 		}
 	}
 	
@@ -713,6 +714,14 @@ a.more-link {
 			.entry-content {
 				padding: 0 20px 20px 20px;
 			}
+
+			.entry-tags {
+				a {				
+					color: #5d5d5d;
+					background: #eef1f3;
+					border: 1px solid #e2e2e2;
+				}
+			}
 		}
 
 		&.hover {
@@ -803,10 +812,11 @@ q {
 }
 
 hr {
-	background-color: #ccc;
+	background-color: #e7e7e7;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-top: 1.5rem;
+	margin-bottom: 1em;
 }
 
 dt {

@@ -17,7 +17,6 @@ $(document).ready(function() {
 
 	$('.tile-grid .grid-item').hover(function() {
 		$(this).addClass('hover');
-		console.log('hover');
 	},
 	function() {
 		$(this).removeClass('hover');

@@ -35,6 +35,10 @@ get_header(); ?>
 								} else {
 									the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 								}
+						
+								the_terms(get_the_ID(), 'projects-tags', '<div class="entry-tags">', '', '</div><hr/>');
+
+								the_terms(get_the_ID(), 'projects-countries', '<div class="entry-tags">', '', '</div><hr/>');
 							?>
 
 						</header><!-- .entry-header -->

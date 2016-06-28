@@ -47,7 +47,14 @@
 	<div class="entry-content">
 		<?php
 			if (is_archive()) {
-				the_excerpt();
+				if (get_post_type() == 'projects') {
+					the_terms(get_the_ID(), 'projects-tags', '<div class="entry-tags">', '', '</div><hr/>');
+
+					the_terms(get_the_ID(), 'projects-countries', '<div class="entry-tags">', '', '</div>');
+				}
+				else {
+					the_excerpt();
+				}
 			}
 			else {			
 				the_content( sprintf(
