@@ -15,7 +15,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		if (is_archive()) {
+			echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
 			the_post_thumbnail();
+			echo '</a>';
 		}
 	?>
 
