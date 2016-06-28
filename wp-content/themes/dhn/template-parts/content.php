@@ -48,7 +48,11 @@
 		<?php
 			if (is_archive()) {
 				if (get_post_type() == 'projects') {
-					the_terms(get_the_ID(), 'projects-tags', '<div class="entry-tags">', '', '</div><hr/>');
+//					the_excerpt();
+
+					echo get_custom_excerpt(15);
+
+					the_terms(get_the_ID(), 'projects-tags', '<br/><br/><div class="entry-tags">', '', '</div><hr/>');
 
 					the_terms(get_the_ID(), 'projects-countries', '<div class="entry-tags">', '', '</div>');
 				}

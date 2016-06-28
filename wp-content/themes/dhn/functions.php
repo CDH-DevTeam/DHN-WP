@@ -78,12 +78,12 @@ function dhn_setup() {
 		'default-image' => '',
 	) ) );
 
-	add_filter('show_admin_bar', '__return_false');
-
 	set_post_thumbnail_size( 1055 ); 
 }
 endif;
 add_action( 'after_setup_theme', 'dhn_setup' );
+
+add_filter('show_admin_bar', '__return_false');
 
 function create_taxonomies() {
     register_taxonomy('projects-countries', array('projects'), array(
