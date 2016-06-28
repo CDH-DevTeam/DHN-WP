@@ -35,10 +35,6 @@ get_header(); ?>
 								} else {
 									the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 								}
-						
-								the_terms(get_the_ID(), 'projects-tags', '<div class="entry-tags">', '', '</div><hr/>');
-
-								the_terms(get_the_ID(), 'projects-countries', '<div class="entry-tags">', '', '</div><hr/>');
 							?>
 
 						</header><!-- .entry-header -->
@@ -57,6 +53,10 @@ get_header(); ?>
 									) );
 
 									echo '<div class="u-cf"></div>';
+						
+									the_terms(get_the_ID(), 'projects-tags', '<hr/><div class="entry-tags">', '', '');
+
+									the_terms(get_the_ID(), 'projects-countries', '', '', '</div><br/>');
 								}
 
 								wp_link_pages( array(
