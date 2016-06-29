@@ -1124,6 +1124,12 @@ table {
 
 			float: left;
 		}
+
+		@media(max-width: 440px) {
+			float: none;
+
+			margin-bottom: 20px;
+		}
 	}
 
 	.main-text {
@@ -1161,6 +1167,12 @@ table {
 			padding-right: 0;
 		}
 
+		@media(max-width: 440px) {
+			margin: 0;
+			padding: 0;
+
+			border: none;
+		}
 	}
 
 	.link-text {
@@ -1173,7 +1185,7 @@ table {
 
 		padding-left: 20px;
 
-		border-left: 1px solid #fff;
+		border-left: 1px solid rgba(255, 255, 255, 0.5);
 
 		line-height: 70px;
 		text-align: center;
@@ -1183,10 +1195,11 @@ table {
 
 			top: auto;
 			left: auto;
+			right: auto;
 
 			height: auto;
 
-			padding: 20px 20px 10px 140px;
+			padding: 20px 20px 10px 120px;
 
 			border: none;
 
@@ -1194,6 +1207,11 @@ table {
 			line-height: inherit;
 
 			clear: both;
+		}
+
+		@media(max-width: 440px) {
+			margin: 0;
+			padding: 20px 0;
 		}
  	}
 
