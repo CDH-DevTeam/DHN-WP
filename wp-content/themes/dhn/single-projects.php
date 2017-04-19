@@ -72,7 +72,7 @@ get_header(); ?>
 							<div class="eight columns">
 
 								<?php if (get_post_meta(get_the_ID(), 'department', true) != '') { ?>
-									<h4>Department</h4>
+									<h4>Institution</h4>
 									<p>
 										<?php
 										echo get_post_meta(get_the_ID(), 'department', true);

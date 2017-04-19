@@ -146,7 +146,7 @@ function create_post_type() {
   register_post_type( 'departments',
     array(
       'labels' => array(
-        'name' => __( 'Departments' ),
+        'name' => __( 'Institution' ),
         'singular_name' => __( 'Department' )
       ),
       'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
